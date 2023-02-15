@@ -1,2 +1,2 @@
 #!/bin/bash
-result=$((POWER*100/DIVIDE))
+echo $((POWER/DIVIDE))
