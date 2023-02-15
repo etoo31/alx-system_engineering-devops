@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $(compgen -v) $(compgen -e) $(compgen -A function)
