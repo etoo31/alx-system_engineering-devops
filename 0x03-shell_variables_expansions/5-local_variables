@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(set | grep -oP "^\w+(?==)") $(printenv | grep -oP "^\w+(?==)") $(declare -F | awk '{print $3}')
+echo $(set | cut -d= -f1) $(printenv | cut -d= -f1) $(declare -F | cut -d' ' -f3)
