@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(compgen -v) $(compgen -e) $(compgen -A function)
+echo $(set | grep -oP "^\w+(?==)") $(printenv | grep -oP "^\w+(?==)") $(declare -F | awk '{print $3}')
