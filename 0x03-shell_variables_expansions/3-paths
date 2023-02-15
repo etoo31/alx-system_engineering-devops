@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "There are $(tr : '\n' <<< "$PATH" | wc -l) directories in the PATH."
